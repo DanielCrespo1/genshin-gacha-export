@@ -36,11 +36,11 @@ const start = async () => {
     const sheet = workbook.addWorksheet(name, {views: [{state: 'frozen', ySplit: 1}]})
     sheet.columns = [
       { header: "Timestamp", key: "time", width: 24 },
-      { header: "Reward Name", key: "name", width: 14 },
-      { header: "Reward Type", key: "type", width: 8 },
-      { header: "Rarity (Star)", key: "rank", width: 8 },
-      { header: "Wish Count", key: "idx", width: 8 },
-      { header: "Pity Count", key: "pdx", width: 8 },
+      { header: "Reward Name", key: "name", width: 35 },
+      { header: "Reward Type", key: "type", width: 15 },
+      { header: "Rarity (Star)", key: "rank", width: 15 },
+      { header: "Wish Count", key: "idx", width: 15 },
+      { header: "Pity Count", key: "pdx", width: 15 },
     ]
     // get gacha logs
     const logs = value
